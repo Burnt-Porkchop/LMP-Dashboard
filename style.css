@@ -1,0 +1,176 @@
+/* Overall page */
+body {
+    margin: 0;
+    background-color: #05070B;
+    color: #bababa;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* Main heading */
+.Title {
+    background-color: #0A0E16;
+    width: 1;
+    box-sizing: border-box;
+    color: #a02323;
+    border-bottom: 3px solid #54345a;
+    border-radius: 0;
+    padding: 10px;
+    margin: 0px;
+    font-size: 34px;
+    font-family: Impact, sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.Title h1 {
+    color: #a02323;
+    font-size: 34px;
+    font-family: Impact, sans-serif;
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.Title p {
+    color: #aaa;
+    font-size: 20px;
+    font-family: Impact, sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+/* Paragraphs */
+p {
+    color: #aaaaaa;
+    font-size: 20px;
+}
+
+
+/* Status Panel */
+.ServerStatus {
+    background-color: #0A0E16;
+    border: 1px solid #44245a;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.ServerStatus h2 {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.ServerStatus.Offline {
+    border-color: #f33;
+}
+
+.ServerStatus.Online {
+    border-color: #0f6;
+}
+
+.ServerStatus.Offline p {
+    color: #f00;
+}
+
+.ServerStatus.Online p {
+    color: #0f0;
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* Players Panel */
+.ServerPlayers {
+    background-color: #0A0E16;
+    border: 1px solid #44245a;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.ServerPlayers h2 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 28px;
+}
+
+.ServerPlayers p {
+    color: #aaaaaa;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+/*Kerbolar Map*/
+
+.KerbolarMap {
+    background-color: #0A0E16;
+    border: 1px solid #44245a;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 28px;
+    margin-top: 20px;
+}
+
+.KerbolarMap img {
+    width: 100%;
+    height: auto;
+}
+
+.KerbolarMap h2 {
+    text-align: center;
+}
+
+#bodyTitle {
+    margin: 28px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#backButton {
+    background-color: #0A0E16;
+    color: #aaaaaa;
+    border: 1px solid #44245a;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#backButton:hover {
+    background-color: #27144a;
+    color: #ffffff;
+}
+
+#bodyView {
+    background-color: #0A0E16;
+    border: 1px solid #44245a;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.KerbolarMap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#bodyMap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

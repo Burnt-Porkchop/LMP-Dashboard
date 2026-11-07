@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>LMP Dashboard</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="Title">
+        <h1>The Kerran Empire LMP</h1>
+        <p>Welcome to The Kerran Empire LMP server dashboard!</p>
+    </div>
+
+    <div class="ServerStatus Online" id="serverStatus">
+        <h2>Server Status</h2>
+        <p id="statusText">Online</p>
+    </div>
+
+    <div class="ServerPlayers">
+        <h2>Players Online</h2>
+        <div id="playerList">
+            <p>Loading players...</p>
+        </div>
+    </div>
+
+    <div id="systemView" class="KerbolarMap">
+        <h2>Kerbolar System</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="512"
+            height="512">
+
+            <ellipse id="Body01" data-body="Kerbol" cx="55.292" cy="54.994" rx="35.852" ry="35.852" fill="#ffd800" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 256.255735, -19.662172)"/>
+            <ellipse id="Body02" data-body="Moho" cx="111.15" cy="110.514" rx="8.54" ry="8.54" fill="#93785e" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 256.905725, -40.489977)"/>
+            <ellipse id="Body03" data-body="Eve" cx="170.346" cy="166.952" rx="16.135" ry="16.135" fill="#9f5cc2" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 254.955519, -62.11314)"/>
+            <ellipse id="Body04" data-body="Kerbin" cx="232.045" cy="232.193" rx="13.827" ry="13.827" fill="#4786cb" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 257.460083, -85.850993)"/>
+            <ellipse id="Body05" data-body="Duna" cx="277.014" cy="273.518" rx="7.757" ry="7.757" fill="#ce640f" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 254.883392, -98.128096)"/>
+            <ellipse id="Body06" data-body="Dres" cx="307.153" cy="308.649" rx="5.442" ry="5.442" fill="#787878" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 258.413269, -104.193408)"/>
+            <ellipse id="Body07" data-body="Jool" cx="363.241" cy="365.079" rx="26.877" ry="26.877" fill="#00cf05" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 258.329953, -115.224126)"/>
+            <ellipse id="Body08" data-body="Bop" cx="261.636" cy="461.504" rx="8.628" ry="8.628" fill="#8c5634" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 195.685081, -111.561033)"/>
+            <ellipse id="Body09" data-body="Tylo" cx="413.045" cy="309.875" rx="10.715" ry="10.715" fill="#797979" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 276.718506, -111.405402)"/>
+            <ellipse id="Body10" data-body="Vall" cx="287.126" cy="433.987" rx="7.404" ry="7.404" fill="#78dcff" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 220.353425, -110.127361)"/>
+            <ellipse id="Body11" data-body="Pol" cx="463.046" cy="262.924" rx="9.508" ry="9.508" fill="#a98426" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 276.239623, -113.562077)"/>
+            <ellipse id="Body12" data-body="Laythe" cx="313.532" cy="411.976" rx="8.163" ry="8.163" fill="#487cc5" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 247.609573, -113.235145)"/>
+            <ellipse id="Body13" data-body="Eeloo" cx="465.575" cy="466.131" rx="6.895" ry="6.895" fill="#eae2df" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 257.74859, -173.267593)"/>
+            <ellipse id="Body14" data-body="Gilly" cx="200.989" cy="142.222" rx="4.308" ry="4.308" fill="#9c9c9c" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 275.710054, -63.217084)"/>
+            <ellipse id="Body15" data-body="The Mun" cx="258.921" cy="208.05" rx="4.214" ry="4.214" fill="#939393" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 281.293245, -89.836729)"/>
+            <ellipse id="Body16" data-body="Minmus" cx="199.941" cy="256.739" rx="4.89" ry="4.89" fill="#00ffe5" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 237.105774, -80.307311)"/>
+            <ellipse id="Body17" data-body="Ike" cx="305.463" cy="255.769" rx="4.334" ry="4.334" fill="#878787" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 282.125264, -106.315271)"/>
+            <style>
+            ellipse {
+                cursor: pointer;
+            }
+
+            ellipse:hover {
+                stroke: white;
+                stroke-width: 2;
+            }
+            </style>
+        </svg>
+
+
+
+    </div>
+
+
+    <div id="bodyView" class="BodyView" hidden>
+        <button id="backButton">← Back to system</button>
+
+        <h2 id="bodyTitle">Planet</h2>
+
+        <div id="bodyMap">
+            <!-- We'll put the planet and its orbit visualization here -->
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
