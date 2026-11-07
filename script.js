@@ -9,7 +9,7 @@ const bodyTitle = document.getElementById("bodyTitle");
 const bodyMap = document.getElementById("bodyMap");
 const backButton = document.getElementById("backButton");
 
-const serverURL = "http://162.216.112.162:5641/";
+const serverURL = "https://lmpdashboardproxy.porkchopburnt.workers.dev/";
 
 let currentVessels = [];
 let selectedBody = null;
